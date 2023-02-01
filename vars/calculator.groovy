@@ -1,3 +1,6 @@
 def add(x,y){
-  echo "sum of ${x} and ${y} is {x+y}"
+  sh """
+  sum=$((${x} + ${y}))"
+  echo "sum of ${x} and ${y} is ${sum}"
+  """
 }
